@@ -82,8 +82,8 @@ class MusicLibraryController
   end
 
   def play_song
-      puts "Which song number would you like to play?"
       input = gets.strip.to_i
+      puts "Which song number would you like to play?"
 
       return if input < 1 || input > Song.all.length
       song = Song.all.uniq.sort{|a,b| a.name <=> b.name}[input - 1]
