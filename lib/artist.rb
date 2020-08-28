@@ -38,8 +38,8 @@ class Artist
   def genres
     genres = @songs.collect do |song|
       song.genre
+      binding.pry
     end
     genres.uniq
   end
-  binding.pry
 end
