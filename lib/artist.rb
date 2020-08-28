@@ -1,6 +1,6 @@
 class Artist
   extend Concerns::Findable
-  
+
   attr_accessor :name
   @@all = []
 
@@ -41,4 +41,5 @@ class Artist
     end
     genres.uniq
   end
+  binding.pry
 end
